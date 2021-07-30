@@ -154,7 +154,7 @@ if(message.content === "w?invite") {
     if(message.content === "w?help") {
     let embed = new Discord.MessageEmbed()
     .setTitle("Commands")
-    .setDescription("Bot prefix: `w?` \n\n**Owner** \n`WIP` \n**Moderation** \n`kick`,`ban`,`purge` \n**Utility** \n`slowmode`,`nuke`,`google` \n**Posting** \n`announce`,`report`,`poll` \n**Roles** \n`WIP` \n**Fun** \n`nameme`,`ping`,`kill`,`snipe`,`poop`,`dog`,`wow`,`nitro`,`gayrate`,`meme`,`8ball`,`topic`,`hug`,`hack`,`slap` \n**Information** \n`invite`,`botinfo`,`membercount`,`support`,`servers`,`avatar`,`serverinfo`,`whois`,`vote`")
+    .setDescription("Bot prefix: `w?` \n\n**Owner** \n`WIP` \n**Moderation** \n`kick`,`ban`,`purge` \n**Utility** \n`slowmode`,`nuke`,`google` \n**Posting** \n`announce`,`report`,`poll` \n**Roles** \n`WIP` \n**Fun** \n`nameme`,`ping`,`kill`,`snipe`,`poop`,`dog`,`wow`,`gayrate`,`meme`,`8ball`,`topic`,`hug`,`hack`,`slap` \n**Information** \n`invite`,`botinfo`,`membercount`,`support`,`servers`,`avatar`,`serverinfo`,`whois`,`vote`")
     .setColor("#e9c172")
     .setFooter("Woof - Version 1.2");
     message.channel.send(embed);
@@ -343,22 +343,6 @@ message.channel.send(embed).then(m => {
  
 }
 }
-//Nitro Troll Command//
-if(message.content.toLowerCase() === "w?nitro") {
- let embed = new Discord.MessageEmbed()
-
- .setTitle(":handbag:·Discord Nitro Giveaway")
- .addField("**Prize**", "`x1 Nitro Classic`")
- .addField("**Link**", "https://rebrand.ly/nitro/giveaway/bGl7")
- .addField("**Steps**", "`Click Link`")
-.setImage("https://media.tenor.com/images/a013cf141bcd9697b33de0395afa73a3/tenor.gif")
-.setThumbnail("https://media.tenor.com/images/185d01f614785e4d62cb57394781e08c/tenor.gif")
- .setColor("PURPLE")
- .setTimestamp()
- .setFooter("Discord")
-
- message.channel.send(embed) 
-};
 //Google Search Command//
 if (message.content.toLowerCase().startsWith("w?google")) { 
 let args = message.content.split(" ").slice(1);
