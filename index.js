@@ -37,7 +37,7 @@ client.on("message", message => {
  }
  //Nameme Command//
   if(message.content === "w?nameme") {
-    let nicknames = ["Stupid", "Asshole", "Nobody", "Beatiful", "Wonderful"]
+    let nicknames = ["Stupid", "Asshole", "hm", "Beatiful", "Wonderful"]
     message.channel.send(`${nicknames[Math.floor(Math.random() * nicknames.length)]} is your new name!`)
   }
   //Kill Command//
